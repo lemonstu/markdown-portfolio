@@ -4,7 +4,8 @@
 #### only four now
 ##### Nothing like the Fifth
 ###### And the final six that will include:
-- * This Italic Line *
-- ** This is a bold one **
-- [] That's check square
+* This Italic Line *
+** This is a bold one **
+- [] That's check square ( I think)
+- That's a bullet point *I hope so*
 
