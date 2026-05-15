@@ -69,19 +69,33 @@ body {
   break-after: auto;
 }
 
-/* Cover */
+/* Cover — let content size naturally to avoid 2-page spill */
 .cover {
-  min-height: 9.4in;
+  min-height: 0;
+  display: block;
   padding: 0;
 }
-.cover__title { font-size: 32pt; }
-.cover__sub { font-size: 12pt; }
+.cover__top { margin-bottom: 22px; padding-bottom: 18px; }
+.cover__hero { margin: 6px 0 22px; }
+.cover__title { font-size: 30pt; }
+.cover__sub { font-size: 11.5pt; margin-top: 12px; }
 .cover__summary {
   background: #fbfaf7;
   border-color: #d9dee5;
   box-shadow: none;
+  margin-bottom: 22px;
+  padding: 14px 16px;
 }
-.kpi__value { font-size: 20pt; }
+.kpi__value { font-size: 18pt; }
+.cover__toc { margin-top: 22px; padding-top: 16px; }
+.toc__list li { padding: 4px 0; font-size: 9.5pt; }
+.cover__footer { margin-top: 22px; }
+
+/* Per-page sample marker — already covered by @page bottom-center text */
+.page-mark { display: none !important; }
+
+/* In-document report footer — replaced by @page footer in print */
+.report-footer { display: none !important; }
 
 /* Page headers */
 .page-header__title { font-size: 19pt; }
@@ -129,19 +143,6 @@ a[href]:after { content: ""; }
 
 /* Hide elements that shouldn't print (none currently — placeholder) */
 .no-print { display: none !important; }
-
-/* Footer note repeats only at end via the document footer block */
-.report-footer {
-  margin: 0;
-  padding: 14px 0 0;
-  border-top: 1px solid #d9dee5;
-  page-break-before: avoid;
-  break-before: avoid;
-  font-size: 8.5pt;
-}
-.report-footer__note {
-  font-style: italic;
-}
 
 /* Avoid orphan headings */
 h1, h2, h3, h4 {

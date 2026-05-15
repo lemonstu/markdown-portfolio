@@ -125,6 +125,32 @@ ul, ol { margin: 0 0 12px 18px; padding: 0; }
 li { margin-bottom: 4px; }
 
 /* ------------------------------------------------------------
+   Persistent per-page sample marker
+   ------------------------------------------------------------ */
+.page-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 8pt;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a6c1c;
+  background: var(--p2-bg);
+  border: 1px solid #e2d39a;
+  border-radius: 4px;
+  padding: 3px 9px;
+  margin: 0 0 18px;
+}
+.page-mark__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rule);
+}
+
+/* ------------------------------------------------------------
    Page header
    ------------------------------------------------------------ */
 .page-header {
@@ -618,6 +644,22 @@ li { margin-bottom: 4px; }
   .insight__grid { grid-template-columns: 1fr; gap: 2px 0; }
   .insight__grid dt { padding-top: 10px; }
   .insight__grid dd { padding-bottom: 4px; }
-  .table-wrap { overflow-x: auto; }
+  .table-wrap {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    background: linear-gradient(to right, rgba(255,255,255,0), var(--card));
+    pointer-events: none;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+  }
   .data-table { min-width: 560px; }
 }
