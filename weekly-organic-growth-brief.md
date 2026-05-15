@@ -106,19 +106,20 @@ Briefs delivered every **Tuesday by 12:00 client local time**, covering the prev
 - Mid-pilot questions: replied within 1 business day
 
 ### Exact price recommendation
-**$1,600 flat for the 4-week pilot.** ($400/week equivalent)
+- **One-site 4-week pilot:** $950
+- **Agency 4-week pilot (up to 3 sites):** $1,750
+- **Additional pilot site:** +$400/site beyond 3
 
 ### Acceptable price range
-- Floor: $1,200 (only if buyer commits to a 3-month continuation pre-negotiated)
-- Target: $1,600
-- Stretch: $2,400 (when selling to agencies with 20+ retainer clients or to publishers with >$50k MRR)
+- **Single-site:** floor $850 (only with pre-committed 3-month continuation), target $950, stretch $1,400 (for agencies with 20+ retainer clients)
+- **Agency up to 3 sites:** floor $1,500, target $1,750, stretch $2,400 (for high-volume prospects)
 
 ### Why this price is justified
-- Replaces ~12–16 hours of senior analyst time over 4 weeks at $100–$150/hr.
-- A single recovered "decay" page or fixed cannibalization can recover 4–6 figure annual traffic value.
+- Replaces ~8–12 hours of senior analyst time over 4 weeks at $100–$150/hr.
+- A single recovered "decay" page or fixed cannibalization can support meaningful annual traffic recovery on commercial pages.
 - Agency typically marks this up 2–3x to their end client.
-- Pilot pricing must be *low enough to be a no-brainer for one site, high enough to signal seriousness*. $1.6k clears both bars.
-- If they balk at $1,600, they will never pay $500/mo recurring. The price is the qualifier.
+- Pilot pricing must be *low enough to be a no-brainer for one site, high enough to signal seriousness*. $950 single-site clears both bars; the $1,750 agency price improves per-site economics for buyers ready to commit across a small portfolio.
+- If they balk at $950, they will never pay $750/mo recurring. The price is the qualifier.
 
 ### What the client gets each week
 - 1 brief covering: executive summary → top 3 risks → top 5 opportunities → action list with priority/impact/effort → previous actions follow-up → next-week watchlist
@@ -145,8 +146,8 @@ Briefs delivered every **Tuesday by 12:00 client local time**, covering the prev
 
 ### Renewal path after the pilot
 Three options presented at the week-4 wrap call:
-1. **Single-site monthly:** $500/mo, weekly briefs continue, 3-month minimum.
-2. **Multi-site pack:** 3 sites for $1,200/mo, 5 sites for $1,800/mo, 10 sites for $3,000/mo.
+1. **Single-site monthly:** $750–$950/mo, weekly briefs continue, 3-month minimum.
+2. **Agency 3-site monthly:** $1,500–$2,250/mo. Multi-site beyond 3: by quote at +$400–$500/site/mo with volume discount.
 3. **Quarterly deep-dive add-on:** $750/quarter per site, full strategic review + roadmap.
 
 Default close: "Which sites would you want to add next month?" — assume continuation, ask which sites, not whether.
@@ -161,17 +162,16 @@ Default close: "Which sites would you want to add next month?" — assume contin
 - **Included:** 1 deep-dive audit of GSC + GA4 (last 12 months), top 20 prioritized opportunities, content decay map, cannibalization map, 60-min review call, 30-day quick-win roadmap.
 - **Excluded:** Weekly follow-up, execution, technical SEO crawl, backlinks.
 - **Format:** 15–25 page PDF + Google Doc + recorded Loom walkthrough + live call.
-- **Price range:** $750–$1,500
-- **Recommended starting price:** $950
+- **Price range:** $600–$1,500
+- **Recommended starting price:** $750
 - **When to sell:** As a foot-in-the-door for skeptical agencies, or to publishers who refuse retainers. Also as a closing tool when a pilot prospect goes cold.
-- **Upsell path:** → 4-week pilot at credited price (deduct $500 of audit cost from pilot).
+- **Upsell path:** → 4-week pilot at a discounted rate for audit buyers.
 
 ### B. 4-Week Organic Growth Pilot
 *(See full spec in Section 2)*
-- **Price:** $1,600
-- **Range:** $1,200–$2,400
+- **Price:** $950 one-site · $1,750 agency (up to 3 sites) · +$400/site beyond 3
 - **When to sell:** Default first offer to every qualified agency lead.
-- **Upsell path:** → Monthly recurring single site → Multi-site pack → Quarterly deep-dive add-on.
+- **Upsell path:** → Monthly recurring single site → 3-site agency monthly → Quarterly deep-dive add-on.
 
 ### C. Monthly Recurring White-Label SEO Action Report
 - **Name:** Weekly Organic Growth Brief — Monthly Subscription
@@ -180,10 +180,9 @@ Default close: "Which sites would you want to add next month?" — assume contin
 - **Excluded:** Execution, content creation, technical audits, ad-hoc strategy calls outside scheduled cadence.
 - **Format:** PDF + Google Doc + email summary per week; monthly recap PDF.
 - **Price range:**
-  - 1 site: $400–$700/mo (start at **$500/mo**)
-  - 3 sites: $1,050–$1,500/mo (start at **$1,200/mo**)
-  - 5 sites: $1,500–$2,250/mo (start at **$1,800/mo**)
-  - 10 sites: $2,500–$3,500/mo (start at **$3,000/mo**)
+  - 1 site: $750–$950/mo (start at **$850/mo**)
+  - 3 sites: $1,500–$2,250/mo (start at **$1,800/mo**)
+  - 4+ sites: by quote, scaling at +$400–$500/site/mo with volume discount
 - **When to sell:** Immediately after pilot wrap-up. Same week. Pre-prepared agreement ready before the call.
 - **Upsell path:** → Quarterly deep-dive ($750/quarter/site) → Annual roadmap retainer → Custom dashboard build (later phase).
 
@@ -377,20 +376,21 @@ The Weekly Organic Growth Brief is the analyst layer between your client's data 
 
 | Plan | Price | Includes |
 |---|---|---|
-| **4-Week Pilot** *(start here)* | **$1,600 one-time** | 1 site, 4 weekly briefs, onboarding + wrap calls, 90-day roadmap |
-| Single-site monthly | $500 / mo | 1 site, ~4–5 briefs/mo, monthly recap |
-| 3-site pack | $1,200 / mo | 3 sites |
-| 5-site pack | $1,800 / mo | 5 sites |
-| 10-site pack | $3,000 / mo | 10 sites + Slack channel |
+| **One-site 4-week pilot** *(start here)* | **$950 one-time** | 1 site, 4 weekly briefs, onboarding + wrap calls, 90-day roadmap |
+| **Agency 4-week pilot** | **$1,750 one-time** | Up to 3 sites, all of the above per site |
+| Additional pilot site | +$400 / site | When piloting more than 3 sites |
+| Single-site monthly | $750–$950 / mo | 1 site, ~4–5 briefs/mo, monthly recap |
+| 3-site agency monthly | $1,500–$2,250 / mo | 3 sites |
+| Multi-site beyond 3 | By quote | Volume-discounted recurring |
 | Quarterly deep-dive add-on | $750 / quarter / site | Full strategic review + roadmap |
 
-All plans white-label. 3-month minimum on monthly plans. No setup fee on multi-site packs.
+All plans white-label. 3-month minimum on monthly plans. No setup fee on agency packs.
 
 ---
 
 ### The 4-week pilot
 
-For $1,600, we'll run the full process on one of your client sites for 4 weeks. You'll get 4 weekly briefs, an onboarding call, a wrap-up call, and a 90-day roadmap.
+For $950, we'll run the full process on one of your client sites for 4 weeks (or $1,750 for up to 3 sites). You'll get 4 weekly briefs per site, an onboarding call, a wrap-up call, and a 90-day roadmap.
 
 By week 2 you'll know if it earns its keep. By week 4 you'll know which other sites to roll it out to.
 
@@ -441,7 +441,7 @@ A human SEO analyst, supported by deterministic detection logic and AI drafting.
 
 **Stop assembling monthly reports. Start sending weekly action briefs.**
 
-**[Book the 4-week pilot — $1,600]**
+**[Book the 4-week pilot — from $950]**
 **[Or download a sample brief →]**
 
 ---
@@ -1312,7 +1312,7 @@ I run a productized service that fixes that. Every Tuesday, we send a white-labe
 
 It's rebranded as your agency. Your clients see your analyst's voice, not ours.
 
-I'm running a 4-week paid pilot on one site for $1,600 — 4 weekly briefs, kickoff and wrap calls, 90-day roadmap. Full refund if it's not more useful than your current reporting workflow by week 2.
+I'm running a 4-week paid pilot — $950 for one site, or $1,750 for an agency pilot covering up to 3 client sites. 4 weekly briefs per site, kickoff and wrap calls, 90-day roadmap. Full refund if it's not more useful than your current reporting workflow by week 2.
 
 Worth a 15-minute call to see a sample?
 
@@ -1334,7 +1334,7 @@ I pulled GSC data on one of your client sites — [client domain] — for the la
 3. Two URLs are competing for `[query]` — cannibalization, easy fix.
 4. A 2024 post (`/[third page]`) is decaying but still has high-intent queries attached to it.
 
-I run a productized service that delivers this every Tuesday for agency clients — white-label, ready to forward. 4-week paid pilot is $1,600. Refund if it doesn't earn its keep by week 2.
+I run a productized service that delivers this every Tuesday for agency clients — white-label, ready to forward. 4-week paid pilot is $950 for one site, $1,750 for up to 3. Refund if it doesn't earn its keep by week 2.
 
 If [client] would be a useful first site to run it on, I can send a sample brief and book 15 minutes to walk through it.
 
@@ -1344,7 +1344,7 @@ If [client] would be a useful first site to run it on, I can send a sample brief
 
 ### LinkedIn message
 
-> Hi [Name] — saw you run [Agency]. I sell a productized weekly SEO action brief that agencies rebrand and send to clients. Built from their GSC + GA4 data. Saves 3–6 hours of monthly reporting per account. 4-week paid pilot at $1,600, refund clause if it doesn't beat your current process by week 2. Worth 15 min?
+> Hi [Name] — saw you run [Agency]. I sell a productized weekly SEO action brief that agencies rebrand and send to clients. Built from their GSC + GA4 data. Saves 3–6 hours of monthly reporting per account. 4-week paid pilot at $950 single-site or $1,750 for up to 3 sites, refund clause if it doesn't beat your current process by week 2. Worth 15 min?
 
 ---
 
@@ -1384,19 +1384,19 @@ If you'd want me to send the sample to someone else on your team, happy to.
 
 ### WhatsApp / warm intro message
 
-> Hey [Name] — [mutual connection] mentioned you run SEO at [Agency]. I sell a white-label weekly SEO action brief — agencies use it to replace monthly reports and look proactive to clients. 4-week pilot is $1.6k for one site. Want me to send a sample?
+> Hey [Name] — [mutual connection] mentioned you run SEO at [Agency]. I sell a white-label weekly SEO action brief — agencies use it to replace monthly reports and look proactive to clients. 4-week pilot is $950 for one site, $1,750 for up to 3 sites. Want me to send a sample?
 
 ---
 
 ### Short call pitch (in-conversation, 1 minute)
 
-> "We deliver a weekly SEO action brief for one client site at a time. Every Tuesday, the agency gets a 6–10 page white-label PDF that says: here's what changed last week, here are the top 3 risks, top 5 opportunities, here's the action list with priority and effort scores, and here's how last week's recommendations performed. It's pulled from GSC and GA4, written by an analyst, and rebranded as your agency. The 4-week pilot is $1,600 for one site, refundable if it doesn't beat your current reporting workflow by week 2."
+> "We deliver a weekly SEO action brief for one client site at a time. Every Tuesday, the agency gets a 6–10 page white-label PDF that says: here's what changed last week, here are the top 3 risks, top 5 opportunities, here's the action list with priority and effort scores, and here's how last week's recommendations performed. It's pulled from GSC and GA4, written by an analyst, and rebranded as your agency. The 4-week pilot is $950 for one site, or $1,750 for an agency pilot up to 3 sites — refundable if it doesn't beat your current reporting workflow by week 2."
 
 ---
 
 ### 30-second verbal pitch
 
-> "Most SEO agencies waste hours every month writing reports that just say what already happened. We deliver a weekly white-label action brief instead — what to fix, update, and publish, ranked by impact and effort. Agencies forward it to clients as their own. $1,600 for a 4-week pilot on one site."
+> "Most SEO agencies waste hours every month writing reports that just say what already happened. We deliver a weekly white-label action brief instead — what to fix, update, and publish, ranked by impact and effort. Agencies forward it to clients as their own. $950 for a 4-week pilot on one site, $1,750 for up to 3."
 
 ---
 
@@ -1408,9 +1408,9 @@ If you'd want me to send the sample to someone else on your team, happy to.
 >
 > The agency rebrands it as theirs. We're invisible. Their clients see proactive weekly direction from what looks like a senior in-house analyst.
 >
-> We start every relationship with a 4-week paid pilot at $1,600 — one site, four briefs, onboarding and wrap calls, 90-day roadmap. If by week 2 it doesn't beat their current reporting workflow, we refund.
+> We start every relationship with a 4-week paid pilot — $950 for one site or $1,750 for up to 3 sites. Four briefs per site, onboarding and wrap calls, 90-day roadmap. If by week 2 it doesn't beat their current reporting workflow, we refund.
 >
-> After the pilot, agencies typically expand to 3–10 sites at our recurring rates, which range from $500 to $3,000 per month."
+> After the pilot, agencies typically expand to monthly recurring — $750–$950/mo for a single site, or $1,500–$2,250/mo for a 3-site agency package. Multi-site beyond that is by quote."
 
 ---
 
@@ -1425,13 +1425,13 @@ If you'd want me to send the sample to someone else on your team, happy to.
 7. If you could hand one client to me to test this on, which one would it be and why?
 8. What would make this pilot a clear win for you in 4 weeks?
 9. What would make you say "no, this isn't useful"?
-10. Who else needs to sign off on a $1,600 pilot fee at your agency?
+10. Who else needs to sign off on a $950–$1,750 pilot fee at your agency?
 11. Are you the one who'd grant GSC/GA4 access or is that the client?
 12. Realistic timeline to kick off?
 
 ### Closing script for the 4-week pilot
 
-> "Based on what you've described — [recap their pain in one sentence] — I think the right next step is to run the pilot on [specific client] starting [date]. The price is $1,600 for the four weeks, invoiced today. I'll send a 1-page agreement and the access steps right after this call. You'll have the first brief on [specific Tuesday]. If by week 2 it's not earning its keep, I refund the full amount and you keep what's been delivered. Sound good?"
+> "Based on what you've described — [recap their pain in one sentence] — I think the right next step is to run the pilot on [specific client] starting [date]. The price is $950 for the one-site pilot, or $1,750 if you want to include up to two more sites. Invoiced today. I'll send a 1-page agreement and the access steps right after this call. You'll have the first brief on [specific Tuesday]. If by week 2 it's not earning its keep, I refund the full amount and you keep what's been delivered. Sound good?"
 
 > *(If they hesitate:)* "What's the friction — the price, the access, or the timing?"
 
@@ -1458,7 +1458,7 @@ Agreed — fully agentic SEO reports are unreliable. Ours aren't AI insights. De
 Some won't. The ones paying $2k–$10k retainers care a lot — they're already complaining about lack of proactive direction. Pick one of those for the pilot.
 
 **"Price is too high."**
-$1,600 for 4 weeks is replacing 12–16 hours of senior analyst time at your billable rate. If your senior is at $150/hr, you're spending $2,400 already to produce a worse output. If the price is genuinely the blocker, run it on one site for 4 weeks and decide based on results — refund clause makes the downside zero.
+$950 for 4 weeks of single-site work is replacing 8–12 hours of senior analyst time at your billable rate. If your senior is at $150/hr, you're spending $1,200–$1,800 already to produce a worse output. The agency pilot at $1,750 covers up to 3 sites with the same depth per site. If the price is genuinely the blocker, run it on one site for 4 weeks and decide based on results — refund clause makes the downside zero.
 
 **"We don't want to give access."**
 We only request read-only GSC and Viewer-level GA4. Both are revocable in one click. No CMS, no servers, no admin. Most agencies grant this access daily to their own contractors.
@@ -1520,14 +1520,14 @@ The weekly cadence is the product. It's what catches problems while they're fixa
 - Always have an invoice + agreement ready to send before the call
 
 ### What price to test
-- **Default:** $1,600 for 4-week pilot
-- **Premium test (high-confidence prospect):** $2,400
-- **Floor test (cold reply that hesitates on price):** $1,200 *only* if prospect pre-commits to 3-month continuation
+- **Default:** $950 for the one-site pilot · $1,750 for the agency pilot (up to 3 sites)
+- **Premium test (high-confidence prospect):** $1,400 single-site for agencies with 20+ retainer clients · $2,400 agency for high-volume buyers
+- **Floor test (cold reply that hesitates on price):** $850 single-site *only* if prospect pre-commits to 3-month continuation
 
 ### What counts as validation
 - ✅ 5+ paid pilots, full payment received before week 1
 - ✅ 3+ of those pilots renew to monthly recurring (signed agreement) within 2 weeks of wrap
-- ✅ Average renewal value ≥ $500/mo/site
+- ✅ Average renewal value ≥ $750/mo/site
 - ✅ At least 2 referrals received from pilot customers
 - ✅ Average delivery time per brief on track to drop below 90 min by site 5
 
@@ -1742,7 +1742,7 @@ A polished **sample brief PDF** (Section 7 of this doc, designed clean). It's th
 ## 16. Final recommendation
 
 ### Strongest version of the offer
-**A 4-week paid pilot at $1,600 selling a white-label weekly SEO action brief to small/mid SEO agencies, manually delivered, productized from day one, with a refund clause through week 2.**
+**A 4-week paid pilot at $950 single-site (or $1,750 for up to 3 sites) selling a white-label weekly SEO action brief to small/mid SEO agencies, manually delivered, productized from day one, with a refund clause through week 2.**
 
 ### Weakest version to avoid
 A free-tier-led, self-serve, AI-generated SEO dashboard sold to small business owners at $79/mo. You'll burn 12 months building software for the wrong customer, hit churn walls, and realize you should have done the manual service first.

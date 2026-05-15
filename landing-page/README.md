@@ -13,13 +13,13 @@ A static, single-page sales site for the 4-week paid pilot. No JavaScript. No bu
 
 - **Primary CTA:** View the sample report (opens `/sample-report/`).
 - **Secondary CTA:** Apply for the 4-week pilot (prefilled `mailto:` link).
-- **Offer:** $950 one-site pilot · $1,750 agency pilot (up to 3 sites) · 4 weeks · refund through week 2 · no contract.
+- **Offer:** $950 one-site pilot · $1,750 agency pilot (up to 3 sites) · +$400/site beyond 3 · 4 weeks · refund through week 2 · no contract.
 
-## Replace before publishing
+## Before you publish
 
-1. **Email address.** Open `index.html` and find/replace `hello@example.com` (appears in 5 places — header CTA, hero CTA, both pricing CTAs, final CTA, footer). Replace with your real inbox or a forwarder you actually monitor.
-2. **Brand mark + brand name.** The SVG mark in `.brand` is a generic placeholder. Replace with your agency mark; update `.brand__name` text in the header and footer.
-3. **Footer note.** The `© 2026 · Sample landing page · Replace contact email and brand assets before publishing.` line in the footer should be removed once you've replaced the placeholders.
+1. **Email address.** Open `index.html` and find/replace `[PUT MY REAL EMAIL HERE]` (appears in 7 places — header CTA, hero CTA, both pricing CTAs, final CTA, footer contact link). Replace with the inbox or forwarder you actually monitor.
+2. **Brand mark + brand name.** The SVG mark in `.brand` is a generic example. Replace with your agency mark and update `.brand__name` in the header and footer.
+3. **Sample PDF.** Export the sample report to `sample-weekly-organic-growth-brief.pdf` (instructions in `../sample-report/README.md`) and host it at the same root as the landing page so `/sample-weekly-organic-growth-brief.pdf` resolves.
 4. **Optional:** swap the `mailto:` CTAs for a Typeform / Tally / Calendly link if you want a structured intake. Keep the prefilled subject + body in `mailto:` either way — it pre-qualifies the application.
 
 ## Local preview
@@ -161,9 +161,15 @@ You have two clean options:
 
 Put the static files on Netlify / Vercel / Cloudflare Pages at `pilot.youragency.com` and point any links from the main site to it. WP doesn't need to know it exists. This is faster and avoids theme conflicts.
 
-## Pricing note
+## Pricing summary
 
-This page uses **$950 / $1,750** pilot pricing. The strategic package doc (`weekly-organic-growth-brief.md`) anchors at **$1,600 single-site**. These are different price points — likely because the lower price is intended to maximize first-pilot velocity. Pick one and reconcile the package doc when you settle.
+- **One-site 4-week pilot:** $950
+- **Agency 4-week pilot (up to 3 sites):** $1,750
+- **Additional pilot site beyond 3:** +$400/site
+- **Monthly continuation, single site:** $750–$950/month
+- **Monthly continuation, 3-site agency package:** $1,500–$2,250/month
+
+The full pricing logic lives in `../weekly-organic-growth-brief.md` Sections 2 and 3.
 
 ## Performance
 
@@ -179,3 +185,25 @@ This page uses **$950 / $1,750** pilot pricing. The strategic package doc (`week
 - Color contrast on body text and CTA buttons passes WCAG AA.
 
 Review one item before publishing: the `mailto:` links should be replaced with a structured intake (Typeform / Tally / Calendly) once you have one. Some users have no default mail client and the link will appear inert to them.
+
+## Pre-publish checklist
+
+Run through this list before sending the URL to a single agency.
+
+- [ ] Landing page opens cleanly on desktop (latest Chrome, Safari, Firefox).
+- [ ] Landing page opens cleanly on mobile (iOS Safari, Android Chrome — test at 360px width).
+- [ ] No instance of `[PUT MY REAL EMAIL HERE]` remains anywhere in `landing-page/index.html`.
+- [ ] No instance of `hello@example.com` remains anywhere in the deployed files.
+- [ ] All six `mailto:` CTAs open the email client with the correct subject and prefilled body — or have been replaced with a structured intake URL (Typeform / Tally / Calendly).
+- [ ] The footer no longer reads "Sample landing page" or any "replace before publishing" wording.
+- [ ] The brand mark SVG and `.brand__name` text have been swapped for your real brand (or the placeholder has been kept intentionally).
+- [ ] `/sample-weekly-organic-growth-brief.pdf` downloads correctly when clicked from the page.
+- [ ] `/sample-report/` opens the HTML sample report correctly in a new tab.
+- [ ] Pricing on the landing page matches `weekly-organic-growth-brief.md`: $950 / $1,750 / +$400 site / $750–$950 mo / $1,500–$2,250 mo.
+- [ ] No claim of guaranteed traffic, rankings, revenue, or leads anywhere on the page.
+- [ ] "Sample uses fictional data" disclaimer remains visible on the hero preview card.
+- [ ] Sample PDF exported per the steps in `../sample-report/README.md` — background graphics ON, Chrome headers/footers OFF.
+- [ ] At least one CTA on every visible scroll position points to the 4-week pilot.
+- [ ] OG title and description in `<head>` reflect the offer and pricing.
+- [ ] Domain has HTTPS and a valid certificate.
+- [ ] Cache-control headers on the PDF allow inline view, not forced download (optional polish — see Netlify/Vercel snippets above).
