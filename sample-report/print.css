@@ -1,0 +1,153 @@
+/* ============================================================
+   Weekly Organic Growth Brief — Sample Report
+   Print / PDF stylesheet (Letter, single-column).
+   Linked with media="print" from index.html.
+   ============================================================ */
+
+@page {
+  size: Letter;
+  margin: 0.55in 0.55in 0.7in 0.55in;
+
+  @bottom-left {
+    content: "Weekly Organic Growth Brief · mountainjournal.example.com · May 6–12, 2026";
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 8pt;
+    color: #6b7787;
+  }
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 8pt;
+    color: #6b7787;
+  }
+  @bottom-center {
+    content: "Sample report · fictional data";
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 7.5pt;
+    color: #b9a06a;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+/* Suppress page furniture on the cover */
+@page :first {
+  @bottom-left   { content: ""; }
+  @bottom-right  { content: ""; }
+  @bottom-center { content: ""; }
+}
+
+html, body {
+  background: #ffffff !important;
+}
+
+body {
+  font-size: 10pt;
+  color: #0f1822;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.report {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each .page maps to one or more printed pages */
+.page {
+  background: #ffffff;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  page-break-after: always;
+  break-after: page;
+}
+.page:last-of-type {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+/* Cover */
+.cover {
+  min-height: 9.4in;
+  padding: 0;
+}
+.cover__title { font-size: 32pt; }
+.cover__sub { font-size: 12pt; }
+.cover__summary {
+  background: #fbfaf7;
+  border-color: #d9dee5;
+  box-shadow: none;
+}
+.kpi__value { font-size: 20pt; }
+
+/* Page headers */
+.page-header__title { font-size: 19pt; }
+.page-header__rule { background: #0f1822; }
+.page-header--inline { margin-top: 26px; }
+
+/* Body type */
+.lead { font-size: 12pt; }
+.section-lead { font-size: 10pt; }
+
+/* Cards & tables: keep tight, avoid splitting */
+.insight,
+.table-wrap,
+.summary-card,
+.callout {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  box-shadow: none;
+}
+
+.insight {
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.insight__title { font-size: 13pt; }
+.insight__grid { grid-template-columns: 115px 1fr; }
+.insight__grid dd { font-size: 10pt; }
+
+.data-table { font-size: 9.5pt; }
+.data-table thead th { font-size: 8pt; padding: 8px 10px; }
+.data-table tbody td { padding: 8px 10px; }
+.data-table tbody tr:nth-child(even) td {
+  background: #f4f2ec !important;
+}
+
+/* Tags & chips need to print their backgrounds */
+.tag, .chip, .status, .sample-flag {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* No interactive states in print */
+a, a:visited { color: inherit; text-decoration: none; }
+a[href]:after { content: ""; }
+
+/* Hide elements that shouldn't print (none currently — placeholder) */
+.no-print { display: none !important; }
+
+/* Footer note repeats only at end via the document footer block */
+.report-footer {
+  margin: 0;
+  padding: 14px 0 0;
+  border-top: 1px solid #d9dee5;
+  page-break-before: avoid;
+  break-before: avoid;
+  font-size: 8.5pt;
+}
+.report-footer__note {
+  font-style: italic;
+}
+
+/* Avoid orphan headings */
+h1, h2, h3, h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* Make code legible at print sizes */
+code { font-size: 9pt; }
