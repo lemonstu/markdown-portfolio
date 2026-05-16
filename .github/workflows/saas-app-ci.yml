@@ -1,0 +1,63 @@
+name: saas-app CI
+
+on:
+  push:
+    paths:
+      - "saas-app/**"
+      - ".github/workflows/saas-app-ci.yml"
+  pull_request:
+    paths:
+      - "saas-app/**"
+      - ".github/workflows/saas-app-ci.yml"
+
+# Cancel older runs on the same branch when a new push arrives.
+concurrency:
+  group: saas-app-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: typecheck · test · build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    defaults:
+      run:
+        working-directory: saas-app
+
+    env:
+      # Placeholder Supabase values are sufficient for build:
+      # the clients are constructed lazily at request time, not during compile.
+      # Real credentials are required only to actually run the app locally.
+      NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-anon-key-for-ci-only
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+          cache-dependency-path: saas-app/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Tests
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build

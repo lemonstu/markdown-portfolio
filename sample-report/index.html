@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Organic Growth Brief — Sample Report</title>
+  <meta name="description" content="Sample white-label weekly SEO action brief built from GSC and GA4 data. Fictional data used for demonstration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./print.css" media="print" />
+</head>
+<body>
+
+<main class="report">
+
+  <!-- ============================================================
+       COVER PAGE
+       ============================================================ -->
+  <section class="page cover">
+    <div class="cover__top">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">
+          <svg viewBox="0 0 36 36" width="36" height="36" role="img" aria-label="Agency mark">
+            <rect x="1" y="1" width="34" height="34" rx="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 24 L17 12 L22 19 L27 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="27" cy="14" r="1.6" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">[Your Agency Name]</div>
+          <div class="brand__line">Prepared by your SEO team</div>
+        </div>
+      </div>
+      <div class="cover__meta">
+        <div class="cover__meta-row"><span>Report</span><strong>Weekly Organic Growth Brief</strong></div>
+        <div class="cover__meta-row"><span>Property</span><strong>mountainjournal.example.com</strong></div>
+        <div class="cover__meta-row"><span>Period</span><strong>May 6 – May 12, 2026</strong></div>
+        <div class="cover__meta-row"><span>Comparison</span><strong>Prior 7 days &amp; 28-day average</strong></div>
+        <div class="cover__meta-row"><span>Issue</span><strong>Sample · No. 001</strong></div>
+      </div>
+    </div>
+
+    <div class="cover__hero">
+      <div class="eyebrow">Weekly Organic Growth Brief</div>
+      <h1 class="cover__title">What to fix, update, and ship this week.</h1>
+      <p class="cover__sub">A prioritized action list built from this site's Google Search Console and GA4 data — with the evidence, the reasoning, and the next step for each finding.</p>
+    </div>
+
+    <div class="cover__summary">
+      <div class="kpi">
+        <div class="kpi__label">Organic clicks (7d)</div>
+        <div class="kpi__value">2,962</div>
+        <div class="kpi__delta kpi__delta--down">−7% WoW</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Impressions (7d)</div>
+        <div class="kpi__value">184,310</div>
+        <div class="kpi__delta kpi__delta--up">+3% WoW</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Actions queued</div>
+        <div class="kpi__value">8</div>
+        <div class="kpi__delta kpi__delta--note">3 P1 · 4 P2 · 1 P3</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Urgent risks</div>
+        <div class="kpi__value">3</div>
+        <div class="kpi__delta kpi__delta--note">Top P1s on page 02</div>
+      </div>
+    </div>
+
+    <div class="cover__toc">
+      <div class="toc__title">Contents</div>
+      <ol class="toc__list">
+        <li><span>Executive summary</span><span>02</span></li>
+        <li><span>Top 3 urgent risks</span><span>03</span></li>
+        <li><span>Top 5 growth opportunities</span><span>04</span></li>
+        <li><span>Pages losing clicks</span><span>05</span></li>
+        <li><span>CTR opportunities</span><span>05</span></li>
+        <li><span>Near-win keywords (positions 4–20)</span><span>06</span></li>
+        <li><span>Content decay</span><span>06</span></li>
+        <li><span>Internal-link recommendations</span><span>07</span></li>
+        <li><span>GA4 engagement / conversion mismatch</span><span>07</span></li>
+        <li><span>This week's prioritized action plan</span><span>08</span></li>
+        <li><span>Next-week watchlist</span><span>08</span></li>
+      </ol>
+    </div>
+
+    <div class="cover__footer">
+      <div class="sample-flag" role="note">
+        <span class="sample-flag__dot" aria-hidden="true"></span>
+        <span><strong>Sample report.</strong> Site name, URLs, and metrics are fictional. Use for format demonstration only.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EXECUTIVE SUMMARY
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">01</div>
+      <h2 class="page-header__title">Executive summary</h2>
+      <div class="page-header__rule"></div>
+    </header>
+
+    <p class="lead">
+      Organic clicks declined 7% week-over-week (3,184 → 2,962), driven primarily by a position drop on <code>/guides/best-hiking-boots-2026</code> (clicks down 41%). Three pages crossed into top-10 positions for high-volume queries, and one decayed evergreen post is showing recovery after last week's refresh.
+    </p>
+
+    <div class="summary-grid">
+      <div class="summary-card summary-card--risk">
+        <div class="summary-card__label">This week's priorities</div>
+        <ol class="summary-card__list">
+          <li>Title rewrite on <code>/reviews/lightweight-tents</code></li>
+          <li>Investigate position drop on <code>/guides/best-hiking-boots-2026</code></li>
+          <li>Verify <code>/newsletter</code> conversion event in GA4</li>
+        </ol>
+      </div>
+      <div class="summary-card summary-card--win">
+        <div class="summary-card__label">What worked last week</div>
+        <ul class="summary-card__list">
+          <li>Title rewrite on <code>/reviews/down-jackets</code> lifted CTR from 2.1% → 3.4%</li>
+          <li>Three new top-10 entries on commercial review queries</li>
+          <li>Refreshed sleeping-bag guide is stabilizing (re-check next week)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout__label">Analyst note</div>
+      <p>The hiking-boots position drop coincides with a competitor update on May 9 — the fix here is content quality, not technical. The <code>/newsletter</code> zero-conversion event is almost certainly a measurement problem and should be verified before any content investigation.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TOP 3 URGENT RISKS
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">02</div>
+      <h2 class="page-header__title">Top 3 urgent risks</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Pages and signals that warrant action this week before drift becomes loss.</p>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Position drop driving 41% click loss on flagship guide</div>
+        <div class="insight__tags">
+          <span class="tag tag--p1">P1</span>
+          <span class="tag tag--impact">Impact 5/5</span>
+          <span class="tag tag--effort">Effort 2/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/guides/best-hiking-boots-2026</code> lost 251 clicks WoW (612 → 361, −41%) on its primary commercial query.</dd>
+          <dt>Evidence</dt>
+          <dd>GSC: avg position on "best hiking boots 2026" moved from 3.2 → 6.8. Impressions stable (−4%). Site-wide clicks fell 7%, so this is page-specific, not a sitewide event.</dd>
+          <dt>Why it matters</dt>
+          <dd>This page represents ~19% of site clicks in the trailing 28 days and sits on a commercially valuable query. Each position lost on the SERP compounds across the affiliate cycle.</dd>
+          <dt>Recommended action</dt>
+          <dd>Refresh intro to address 2026 testing context, add a "buying criteria" section, and update internal anchors. Investigate the May 9 update from the page's top SERP competitor (name redacted in sample) to identify content gaps.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Seasonal decline on wilderness first-aid content</div>
+        <div class="insight__tags">
+          <span class="tag tag--p3">P3</span>
+          <span class="tag tag--impact">Impact 2/5</span>
+          <span class="tag tag--effort">Effort 1/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/blog/wilderness-first-aid</code> impressions down 33%, clicks down 38% WoW.</dd>
+          <dt>Evidence</dt>
+          <dd>12-month trend shows clear winter-skew on the primary query "wilderness first aid kit." Same pattern observed in May 2024 and May 2025.</dd>
+          <dt>Why it matters</dt>
+          <dd>The drop is expected. Acting on it would waste editorial cycles. The risk is misattribution to something fixable.</dd>
+          <dt>Recommended action</dt>
+          <dd>Hold. Flag as seasonal in the action log. Revisit in autumn with a refresh aimed at the next seasonal peak.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Indexation drop on budget backpacks reviews</div>
+        <div class="insight__tags">
+          <span class="tag tag--p2">P2</span>
+          <span class="tag tag--impact">Impact 3/5</span>
+          <span class="tag tag--effort">Effort 2/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd>Only 11 of 14 historical URLs in <code>/reviews/budget-backpacks</code> are currently indexed; 3 URLs dropped from the index after a batch publish on May 1.</dd>
+          <dt>Evidence</dt>
+          <dd>GSC Index Coverage shows 3 URLs in "Crawled — currently not indexed." All 3 are under 600 words of unique copy and share heavy templated structure.</dd>
+          <dt>Why it matters</dt>
+          <dd>Likely a thin-content signal at the section level. Left unchecked, this can drag the section's overall quality signal and affect neighboring URLs.</dd>
+          <dt>Recommended action</dt>
+          <dd>Audit the 3 affected URLs; either consolidate into the parent review hub with clear differentiation, or strengthen each with unique testing notes and imagery.</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- ============================================================
+       TOP 5 GROWTH OPPORTUNITIES
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">03</div>
+      <h2 class="page-header__title">Top 5 growth opportunities</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Highest-leverage wins available this week, ranked by impact × inverse-effort.</p>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Title rewrite — lightweight tents</div>
+        <div class="insight__tags">
+          <span class="tag tag--p1">P1</span>
+          <span class="tag tag--impact">Impact 5/5</span>
+          <span class="tag tag--effort">Effort 1/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/reviews/lightweight-tents</code> ranks position 6 for "best lightweight tents under $300" with 1,940 weekly impressions but only 1.8% CTR.</dd>
+          <dt>Evidence</dt>
+          <dd>Site-specific CTR curve places expected CTR at position 6 around 5.2%. Current title: <em>"Best Lightweight Tents — Mountain Journal Reviews."</em></dd>
+          <dt>Why it matters</dt>
+          <dd>The query intent is specific and commercial. Closing the CTR gap to the expected curve would recover an estimated 60–90 weekly clicks on a single rewrite.</dd>
+          <dt>Recommended action</dt>
+          <dd>Rewrite title to <em>"Best Lightweight Tents Under $300 (2026): 11 Tested."</em> Match meta description and the H1.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Add beginner-targeted section — trail running shoes</div>
+        <div class="insight__tags">
+          <span class="tag tag--p2">P2</span>
+          <span class="tag tag--impact">Impact 4/5</span>
+          <span class="tag tag--effort">Effort 3/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/guides/trail-running-shoes</code> ranks position 9 for "trail running shoes for beginners" (1,420 imp/wk, 1.1% CTR).</dd>
+          <dt>Evidence</dt>
+          <dd>Body content is intermediate-to-advanced; no explicit "beginner" framing in the first 600 words. Two related beginner queries also rank 12–15.</dd>
+          <dt>Why it matters</dt>
+          <dd>This is a near-win on a sustained query family. Aligning intent in the opening of the page typically moves rank 9 → 5–6 within 4–6 weeks.</dd>
+          <dt>Recommended action</dt>
+          <dd>Add a 300-word "for beginners" subsection in the first third. Internal-link from <code>/blog/start-running-trails</code> with anchor "trail running shoes for beginners."</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Expand backpacking-specific section — water filters</div>
+        <div class="insight__tags">
+          <span class="tag tag--p2">P2</span>
+          <span class="tag tag--impact">Impact 3/5</span>
+          <span class="tag tag--effort">Effort 3/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/reviews/water-filters</code> picked up 3 new queries in positions 11–15 this week (combined 720 imp/wk), all backpacking-specific.</dd>
+          <dt>Evidence</dt>
+          <dd>Page currently mentions backpacking only in passing. No dedicated section, no internal anchor.</dd>
+          <dt>Why it matters</dt>
+          <dd>The queries are emerging on a page that already has authority. A focused section can convert "ranking" into "ranking and clicked."</dd>
+          <dt>Recommended action</dt>
+          <dd>Add a 300-word "Best water filters for backpacking" section with 2–3 product recommendations and weight comparisons. Add an anchor link in the page's table of contents.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Refresh decayed evergreen — sleeping-bag temperature ratings</div>
+        <div class="insight__tags">
+          <span class="tag tag--p2">P2</span>
+          <span class="tag tag--impact">Impact 3/5</span>
+          <span class="tag tag--effort">Effort 3/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/guides/sleeping-bag-temperature-ratings</code> clicks down 27% vs. 90-day baseline. Last updated September 2024.</dd>
+          <dt>Evidence</dt>
+          <dd>Page mentions product lines from 2023. Top competitors have all updated in 2025–2026. Query intent has shifted toward EN/ISO rating clarification.</dd>
+          <dt>Why it matters</dt>
+          <dd>This is a foundational guide that funnels readers into review pages. Reversing decay here protects downstream affiliate revenue.</dd>
+          <dt>Recommended action</dt>
+          <dd>Update product mentions, add EN/ISO comparison block, refresh published date, and re-cross-link from the four review pages it currently feeds.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Push to top 3 with internal links — down vs synthetic</div>
+        <div class="insight__tags">
+          <span class="tag tag--p3">P3</span>
+          <span class="tag tag--impact">Impact 3/5</span>
+          <span class="tag tag--effort">Effort 2/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/compare/down-vs-synthetic</code> ranks position 4 for "down vs synthetic sleeping bag" (880 imp/wk, CTR 3.4% — within expected range).</dd>
+          <dt>Evidence</dt>
+          <dd>Page is well-optimized; no obvious on-page lift left. Two related hub pages mention the topic but do not link to it.</dd>
+          <dt>Why it matters</dt>
+          <dd>Position 1–3 unlocks a step-change in CTR. Internal authority routing is the remaining lever.</dd>
+          <dt>Recommended action</dt>
+          <dd>Add 2 internal links from <code>/guides/hiking-essentials</code> and <code>/blog/ultralight-gear-list</code> with the descriptive anchor "down vs synthetic comparison."</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- ============================================================
+       PAGES LOSING CLICKS + CTR OPPORTUNITIES
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">04</div>
+      <h2 class="page-header__title">Pages losing clicks</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Top 5 by absolute click loss vs. prior 7 days. Causes flagged.</p>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th class="num">Clicks WoW</th>
+            <th class="num">% change</th>
+            <th>Likely cause</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/guides/best-hiking-boots-2026</code></td>
+            <td class="num">612 → 361</td>
+            <td class="num delta--down">−41%</td>
+            <td>Position drop</td>
+          </tr>
+          <tr>
+            <td><code>/blog/wilderness-first-aid</code></td>
+            <td class="num">233 → 145</td>
+            <td class="num delta--down">−38%</td>
+            <td>Seasonal <span class="chip">flagged</span></td>
+          </tr>
+          <tr>
+            <td><code>/reviews/budget-backpacks</code></td>
+            <td class="num">188 → 142</td>
+            <td class="num delta--down">−24%</td>
+            <td>Indexation issue</td>
+          </tr>
+          <tr>
+            <td><code>/guides/layering-system</code></td>
+            <td class="num">154 → 132</td>
+            <td class="num delta--down">−14%</td>
+            <td>CTR drop on primary query</td>
+          </tr>
+          <tr>
+            <td><code>/blog/national-park-permits-guide</code></td>
+            <td class="num">121 → 109</td>
+            <td class="num delta--flat">−10%</td>
+            <td>Within noise band</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <header class="page-header page-header--inline">
+      <div class="page-header__num">05</div>
+      <h2 class="page-header__title">CTR opportunities</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Pages with rising impressions and weak CTR relative to the site-specific CTR curve.</p>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Query</th>
+            <th class="num">Impressions</th>
+            <th class="num">CTR</th>
+            <th class="num">Expected</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/reviews/lightweight-tents</code></td>
+            <td>best lightweight tents under $300</td>
+            <td class="num">1,940 <span class="delta--up">+38%</span></td>
+            <td class="num">1.8%</td>
+            <td class="num">5.2%</td>
+            <td>Title rewrite (see opportunity #1)</td>
+          </tr>
+          <tr>
+            <td><code>/guides/trail-running-shoes</code></td>
+            <td>trail running shoes for beginners</td>
+            <td class="num">1,420 <span class="delta--up">+22%</span></td>
+            <td class="num">1.1%</td>
+            <td class="num">3.8%</td>
+            <td>Add beginner subsection</td>
+          </tr>
+          <tr>
+            <td><code>/guides/winter-camping-gear</code></td>
+            <td>winter camping checklist</td>
+            <td class="num">980 <span class="delta--up">+19%</span></td>
+            <td class="num">2.1%</td>
+            <td class="num">4.6%</td>
+            <td>Meta description rewrite</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       NEAR-WIN KEYWORDS + CONTENT DECAY
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">06</div>
+      <h2 class="page-header__title">Near-win keywords (positions 4–20)</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Top 10 ranked queries by impression volume sitting just outside the highest-CTR positions.</p>
+
+    <div class="table-wrap">
+      <table class="data-table data-table--dense">
+        <thead>
+          <tr>
+            <th>Query</th>
+            <th>Page</th>
+            <th class="num">Position</th>
+            <th class="num">Impressions</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>best lightweight tents under $300</td><td><code>/reviews/lightweight-tents</code></td><td class="num">6.0</td><td class="num">1,940</td><td>CTR rewrite</td></tr>
+          <tr><td>trail running shoes for beginners</td><td><code>/guides/trail-running-shoes</code></td><td class="num">9.1</td><td class="num">1,420</td><td>Content section + internal link</td></tr>
+          <tr><td>winter camping checklist</td><td><code>/guides/winter-camping-gear</code></td><td class="num">7.4</td><td class="num">980</td><td>Meta rewrite</td></tr>
+          <tr><td>down vs synthetic sleeping bag</td><td><code>/compare/down-vs-synthetic</code></td><td class="num">4.2</td><td class="num">880</td><td>Internal link boost</td></tr>
+          <tr><td>how to choose hiking boots</td><td><code>/guides/best-hiking-boots-2026</code></td><td class="num">6.8</td><td class="num">760</td><td>Recover ranking</td></tr>
+          <tr><td>best water filter for backpacking</td><td><code>/reviews/water-filters</code></td><td class="num">11.3</td><td class="num">540</td><td>Section expansion</td></tr>
+          <tr><td>sleeping bag temperature ratings</td><td><code>/guides/sleeping-bag-temperature-ratings</code></td><td class="num">8.9</td><td class="num">510</td><td>Content refresh</td></tr>
+          <tr><td>ultralight backpacking gear list</td><td><code>/blog/ultralight-gear-list</code></td><td class="num">12.4</td><td class="num">410</td><td>Internal link audit</td></tr>
+          <tr><td>best trekking poles</td><td><code>/reviews/trekking-poles</code></td><td class="num">14.7</td><td class="num">380</td><td>Page expansion + schema</td></tr>
+          <tr><td>best down jacket for hiking</td><td><code>/reviews/down-jackets</code></td><td class="num">5.8</td><td class="num">360</td><td>Title test</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <header class="page-header page-header--inline">
+      <div class="page-header__num">07</div>
+      <h2 class="page-header__title">Content decay</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Pages with sustained click decline vs. trailing 90-day average, where action is warranted.</p>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th class="num">28d vs 90d avg</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/guides/sleeping-bag-temperature-ratings</code></td>
+            <td class="num delta--down">−27%</td>
+            <td>Refresh — update product mentions, refresh date</td>
+          </tr>
+          <tr>
+            <td><code>/blog/best-camping-stoves-2024</code></td>
+            <td class="num delta--down">−52%</td>
+            <td>Refresh + rename — current title carries old year</td>
+          </tr>
+          <tr>
+            <td><code>/guides/water-treatment-options</code></td>
+            <td class="num delta--down">−19%</td>
+            <td>Expand — add 2 new method sections</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       INTERNAL LINKS + GA4 MISMATCH
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">08</div>
+      <h2 class="page-header__title">Internal-link recommendations</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Topical mentions on the site that should route authority to a higher-priority target page.</p>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Anchor suggestion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/blog/start-running-trails</code></td>
+            <td><code>/guides/trail-running-shoes</code></td>
+            <td>"trail running shoes for beginners"</td>
+          </tr>
+          <tr>
+            <td><code>/guides/hiking-essentials</code></td>
+            <td><code>/reviews/lightweight-tents</code></td>
+            <td>"lightweight tent picks"</td>
+          </tr>
+          <tr>
+            <td><code>/blog/ultralight-gear-list</code></td>
+            <td><code>/compare/down-vs-synthetic</code></td>
+            <td>"down vs synthetic comparison"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <header class="page-header page-header--inline">
+      <div class="page-header__num">09</div>
+      <h2 class="page-header__title">GA4 engagement / conversion mismatch</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Pages where engagement and conversion are out of step — usually either a measurement problem or a placement problem.</p>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">Newsletter conversion event likely misfiring</div>
+        <div class="insight__tags">
+          <span class="tag tag--p1">P1</span>
+          <span class="tag tag--impact">Impact 4/5</span>
+          <span class="tag tag--effort">Effort 1/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/newsletter</code> has 412 sessions and 78% engaged sessions in the last 14 days, but <strong>0 newsletter signups recorded</strong>.</dd>
+          <dt>Evidence</dt>
+          <dd>Prior 28-day average: 38 signups. Drop coincides with a GA4 configuration change on May 4. Form itself is verified working in browser test.</dd>
+          <dt>Why it matters</dt>
+          <dd>This is almost certainly a measurement problem, not a page problem. Without verification, downstream attribution and any conversion-rate optimization decisions are unreliable.</dd>
+          <dt>Recommended action</dt>
+          <dd>Verify the event trigger in GA4 DebugView; republish the corrected tag; flag as a measurement issue in the action log, not a content issue.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="insight">
+      <div class="insight__head">
+        <div class="insight__title">High engagement, weak affiliate click-through on lightweight tents</div>
+        <div class="insight__tags">
+          <span class="tag tag--p2">P2</span>
+          <span class="tag tag--impact">Impact 3/5</span>
+          <span class="tag tag--effort">Effort 2/5</span>
+        </div>
+      </div>
+      <div class="insight__body">
+        <dl class="insight__grid">
+          <dt>Finding</dt>
+          <dd><code>/reviews/lightweight-tents</code> has 74% engagement but a 1.1% affiliate click-through rate — well below review-page benchmark.</dd>
+          <dt>Evidence</dt>
+          <dd>Primary affiliate CTAs are positioned below the comparison table. GA4 scroll-depth events show most engaged sessions exit before reaching that section.</dd>
+          <dt>Why it matters</dt>
+          <dd>Engagement signals that readers value the page; the conversion gap is placement, not content quality.</dd>
+          <dt>Recommended action</dt>
+          <dd>Reposition the primary affiliate CTA above the comparison table; add a secondary CTA inside the top-pick block.</dd>
+        </dl>
+      </div>
+    </article>
+
+    <div class="callout callout--quiet">
+      <div class="callout__label">Cannibalization watch</div>
+      <p>Query <strong>"best hiking boots for women"</strong> currently ranks two URLs in the top 20: <code>/reviews/womens-hiking-boots</code> (pos. 5.4) and <code>/guides/best-hiking-boots-2026</code> (pos. 12.1). Action: clarify intent, update internal anchors, and de-emphasize women-specific phrasing in the broader guide. P3 · Impact 3/5 · Effort 2/5.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ACTION PLAN + WATCHLIST
+       ============================================================ -->
+  <section class="page">
+    <div class="page-mark" role="note"><span class="page-mark__dot" aria-hidden="true"></span>Sample report · fictional data</div>
+    <header class="page-header">
+      <div class="page-header__num">10</div>
+      <h2 class="page-header__title">This week's prioritized action plan</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Ranked by priority, then impact, then inverse effort. Owners suggested.</p>
+
+    <div class="table-wrap">
+      <table class="data-table action-table">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Action</th>
+            <th>Owner</th>
+            <th>Priority</th>
+            <th class="num">Impact</th>
+            <th class="num">Effort</th>
+            <th>Expected impact in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num">1</td>
+            <td>Title rewrite on <code>/reviews/lightweight-tents</code></td>
+            <td>SEO</td>
+            <td><span class="tag tag--p1">P1</span></td>
+            <td class="num">5</td>
+            <td class="num">1</td>
+            <td>2–3 weeks</td>
+          </tr>
+          <tr>
+            <td class="num">2</td>
+            <td>Investigate <code>/guides/best-hiking-boots-2026</code> position drop</td>
+            <td>SEO</td>
+            <td><span class="tag tag--p1">P1</span></td>
+            <td class="num">5</td>
+            <td class="num">2</td>
+            <td>1 week</td>
+          </tr>
+          <tr>
+            <td class="num">3</td>
+            <td>Verify <code>/newsletter</code> conversion event</td>
+            <td>Dev</td>
+            <td><span class="tag tag--p1">P1</span></td>
+            <td class="num">4</td>
+            <td class="num">1</td>
+            <td>Immediate</td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td>Add "for beginners" section to <code>/guides/trail-running-shoes</code></td>
+            <td>Writer</td>
+            <td><span class="tag tag--p2">P2</span></td>
+            <td class="num">4</td>
+            <td class="num">3</td>
+            <td>4–6 weeks</td>
+          </tr>
+          <tr>
+            <td class="num">5</td>
+            <td>Refresh <code>/blog/best-camping-stoves-2024</code></td>
+            <td>Writer</td>
+            <td><span class="tag tag--p2">P2</span></td>
+            <td class="num">4</td>
+            <td class="num">3</td>
+            <td>4–6 weeks</td>
+          </tr>
+          <tr>
+            <td class="num">6</td>
+            <td>Internal-link sprint (3 pairs listed)</td>
+            <td>SEO</td>
+            <td><span class="tag tag--p2">P2</span></td>
+            <td class="num">3</td>
+            <td class="num">2</td>
+            <td>3–4 weeks</td>
+          </tr>
+          <tr>
+            <td class="num">7</td>
+            <td>Audit 3 non-indexed <code>/reviews/budget-backpacks</code> URLs</td>
+            <td>SEO</td>
+            <td><span class="tag tag--p2">P2</span></td>
+            <td class="num">3</td>
+            <td class="num">2</td>
+            <td>2 weeks</td>
+          </tr>
+          <tr>
+            <td class="num">8</td>
+            <td>Cannibalization fix on women's hiking boots</td>
+            <td>SEO</td>
+            <td><span class="tag tag--p3">P3</span></td>
+            <td class="num">3</td>
+            <td class="num">2</td>
+            <td>4 weeks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <header class="page-header page-header--inline">
+      <div class="page-header__num">11</div>
+      <h2 class="page-header__title">Next-week watchlist</h2>
+      <div class="page-header__rule"></div>
+    </header>
+    <p class="section-lead">Items being monitored. No action implied — just visibility for the next brief.</p>
+
+    <ul class="watchlist">
+      <li><strong>Recovery</strong> of <code>/guides/best-hiking-boots-2026</code> after intervention.</li>
+      <li><strong>CTR change</strong> on <code>/reviews/lightweight-tents</code> after title rewrite.</li>
+      <li><strong>Hold</strong> of the three new top-10 entries on commercial review queries.</li>
+      <li><strong>Re-firing</strong> of the <code>/newsletter</code> conversion event after deploy.</li>
+      <li><strong>Indexation status</strong> on the three <code>/reviews/budget-backpacks</code> URLs.</li>
+    </ul>
+
+    <div class="callout callout--quiet">
+      <div class="callout__label">Previous actions follow-up</div>
+      <ul class="followup">
+        <li><span class="status status--done">Done</span> Refresh <code>/guides/sleeping-bag-temperature-ratings</code> (May 6). <em>Too early — re-check in 2 weeks.</em></li>
+        <li><span class="status status--done">Done</span> Title rewrite on <code>/reviews/down-jackets</code> (May 8). <em>CTR up from 2.1% to 3.4% on primary query.</em></li>
+        <li><span class="status status--open">Open</span> Consolidate <code>/blog/2024-gear-roundup</code> into <code>/blog/2026-gear-roundup</code>. <em>Not started.</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="report-footer">
+    <div class="report-footer__left">
+      <strong>Weekly Organic Growth Brief</strong> · mountainjournal.example.com · May 6–12, 2026
+    </div>
+    <div class="report-footer__right">
+      Prepared by [Your Agency Name]
+    </div>
+    <div class="report-footer__note">
+      Sample report using fictional/anonymized data. Prepared to demonstrate the Weekly Organic Growth Brief format.
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
