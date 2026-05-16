@@ -17,7 +17,7 @@ A static, single-page sales site for the 4-week paid pilot. No JavaScript. No bu
 
 ## Before you publish
 
-1. **Email address.** Open `index.html` and find/replace `[PUT MY REAL EMAIL HERE]` (appears in 7 places — header CTA, hero CTA, both pricing CTAs, final CTA, footer contact link). Replace with the inbox or forwarder you actually monitor.
+1. **Email address.** Open `index.html` and find/replace `[INSERT MY REAL EMAIL HERE]` (appears in 7 places — header CTA, hero CTA, both pricing CTAs, final CTA, footer contact link). Replace with the inbox or forwarder you actually monitor.
 2. **Brand mark + brand name.** The SVG mark in `.brand` is a generic example. Replace with your agency mark and update `.brand__name` in the header and footer.
 3. **Sample PDF.** Export the sample report to `sample-weekly-organic-growth-brief.pdf` (instructions in `../sample-report/README.md`) and host it at the same root as the landing page so `/sample-weekly-organic-growth-brief.pdf` resolves.
 4. **Optional:** swap the `mailto:` CTAs for a Typeform / Tally / Calendly link if you want a structured intake. Keep the prefilled subject + body in `mailto:` either way — it pre-qualifies the application.
@@ -32,49 +32,79 @@ python3 -m http.server 8000
 # visit http://localhost:8000
 ```
 
-The page references `/sample-report/` and `/sample-weekly-organic-growth-brief.pdf` at the root of the deployed domain. For local preview to resolve these links, you'll want them to live alongside the landing page when served. The simplest local arrangement:
+### Deployment path
+
+This page is designed to be hosted at:
 
 ```
-public/
-├── index.html                              ← copy of landing-page/index.html
-├── styles.css                              ← copy of landing-page/styles.css
-├── sample-report/                          ← the sample-report/ folder
+/weekly-organic-growth-brief/
+```
+
+All internal links (`./sample-report/`, `./sample-weekly-organic-growth-brief.pdf`) are **relative**, so the page works equally well at the domain root (`/`), at a subpath (`/weekly-organic-growth-brief/`), or under any other prefix — no link changes required.
+
+The expected published structure is:
+
+```
+/weekly-organic-growth-brief/
+├── index.html                              ← from landing-page/
+├── styles.css                              ← from landing-page/
+├── sample-report/                          ← from sample-report/
 │   ├── index.html
 │   ├── styles.css
 │   └── print.css
 └── sample-weekly-organic-growth-brief.pdf  ← exported from sample-report/
 ```
 
-Then `python3 -m http.server` from `public/` and everything resolves.
+Resulting URLs:
+
+| URL | Resolves to |
+|---|---|
+| `https://your-domain.com/weekly-organic-growth-brief/` | The landing page |
+| `https://your-domain.com/weekly-organic-growth-brief/sample-report/` | The HTML sample report |
+| `https://your-domain.com/weekly-organic-growth-brief/sample-weekly-organic-growth-brief.pdf` | The downloadable PDF |
+
+For local preview, mirror that structure on disk and serve from one level up:
+
+```bash
+# Assuming a public/weekly-organic-growth-brief/ folder laid out as above:
+cd public
+python3 -m http.server 8000
+# visit http://localhost:8000/weekly-organic-growth-brief/
+```
 
 ## Deployment
 
 ### Netlify
 
-1. Create a `public/` directory laid out as above (landing files at root + `sample-report/` folder + the PDF).
-2. From that directory: `npx netlify-cli deploy --prod --dir .`
+1. Create a `public/weekly-organic-growth-brief/` directory laid out as shown above.
+2. From the `public/` directory: `npx netlify-cli deploy --prod --dir .`
    (or drag-and-drop the folder into the Netlify dashboard).
 3. Add a custom domain in **Site settings → Domain management**.
-4. Optional `netlify.toml` for clean URLs and headers:
+4. Optional `netlify.toml` for headers and a short-link redirect:
 
    ```toml
    [build]
      publish = "."
 
    [[headers]]
-     for = "/*"
+     for = "/weekly-organic-growth-brief/*"
      [headers.values]
        Cache-Control = "public, max-age=300, must-revalidate"
 
    [[headers]]
-     for = "/sample-weekly-organic-growth-brief.pdf"
+     for = "/weekly-organic-growth-brief/sample-weekly-organic-growth-brief.pdf"
      [headers.values]
        Cache-Control = "public, max-age=86400"
        Content-Disposition = "inline"
 
    [[redirects]]
+     from = "/pilot"
+     to = "/weekly-organic-growth-brief/"
+     status = 301
+
+   [[redirects]]
      from = "/sample"
-     to = "/sample-report/"
+     to = "/weekly-organic-growth-brief/sample-report/"
      status = 301
    ```
 
@@ -90,7 +120,7 @@ Then `python3 -m http.server` from `public/` and everything resolves.
    {
      "headers": [
        {
-         "source": "/sample-weekly-organic-growth-brief.pdf",
+         "source": "/weekly-organic-growth-brief/sample-weekly-organic-growth-brief.pdf",
          "headers": [
            { "key": "Cache-Control", "value": "public, max-age=86400" },
            { "key": "Content-Disposition", "value": "inline" }
@@ -98,7 +128,8 @@ Then `python3 -m http.server` from `public/` and everything resolves.
        }
      ],
      "redirects": [
-       { "source": "/sample", "destination": "/sample-report/", "permanent": true }
+       { "source": "/pilot", "destination": "/weekly-organic-growth-brief/", "permanent": true },
+       { "source": "/sample", "destination": "/weekly-organic-growth-brief/sample-report/", "permanent": true }
      ]
    }
    ```
@@ -192,8 +223,9 @@ Run through this list before sending the URL to a single agency.
 
 - [ ] Landing page opens cleanly on desktop (latest Chrome, Safari, Firefox).
 - [ ] Landing page opens cleanly on mobile (iOS Safari, Android Chrome — test at 360px width).
-- [ ] No instance of `[PUT MY REAL EMAIL HERE]` remains anywhere in `landing-page/index.html`.
-- [ ] No instance of `hello@example.com` remains anywhere in the deployed files.
+- [ ] No instance of `[INSERT MY REAL EMAIL HERE]` remains anywhere in `landing-page/index.html`.
+- [ ] No instance of `[PUT MY REAL EMAIL HERE]` or `hello@example.com` remains anywhere in the deployed files.
+- [ ] All internal links use relative paths (`./sample-report/`, `./sample-weekly-organic-growth-brief.pdf`) so the page works at any subpath, including `/weekly-organic-growth-brief/`.
 - [ ] All six `mailto:` CTAs open the email client with the correct subject and prefilled body — or have been replaced with a structured intake URL (Typeform / Tally / Calendly).
 - [ ] The footer no longer reads "Sample landing page" or any "replace before publishing" wording.
 - [ ] The brand mark SVG and `.brand__name` text have been swapped for your real brand (or the placeholder has been kept intentionally).
