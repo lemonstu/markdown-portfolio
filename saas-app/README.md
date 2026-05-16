@@ -187,6 +187,10 @@ You should still review RLS policies before turning on production traffic — th
 
 ---
 
+## Smoke test before publishing
+
+For every non-trivial change, walk through `SMOKE.md` once against a fresh Supabase project. It's the human checklist that catches what unit tests can't (auth round-trip, RLS, export round-trip, print view).
+
 ## Known limitations / honest tech debt
 
 - **No automated tests yet.** Detector logic is the highest-priority candidate for unit tests.
