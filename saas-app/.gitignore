@@ -11,3 +11,5 @@ next-env.d.ts
 .turbo
 .idea
 .vscode/*.json
+tsconfig.tsbuildinfo
+coverage

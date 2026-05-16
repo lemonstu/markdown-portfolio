@@ -11,14 +11,20 @@ import { Badge } from "@/components/ui/badge";
 export default async function SettingsPage() {
   const ctx = await getCurrentOrg();
   if (ctx.kind !== "ok") redirect("/onboarding");
+  // Capture narrowed values for the server-action closures below;
+  // TS doesn't propagate control-flow narrowing across function boundaries.
+  const userId = ctx.userId;
+  const orgId = ctx.organization.id;
+  const orgName = ctx.organization.name;
+
   const supabase = await createSupabaseServerClient();
-  const { data: profile } = await supabase.from("profiles").select("*").eq("id", ctx.userId).single();
+  const { data: profile } = await supabase.from("profiles").select("*").eq("id", userId).single();
 
   async function updateProfile(formData: FormData) {
     "use server";
     const supabase = await createSupabaseServerClient();
     const fullName = String(formData.get("full_name") ?? "").trim();
-    await supabase.from("profiles").update({ full_name: fullName || null }).eq("id", ctx.userId);
+    await supabase.from("profiles").update({ full_name: fullName || null }).eq("id", userId);
     revalidatePath("/app/settings");
   }
 
@@ -27,7 +33,7 @@ export default async function SettingsPage() {
     const supabase = await createSupabaseServerClient();
     const name = String(formData.get("name") ?? "").trim();
     if (!name) return;
-    await supabase.from("organizations").update({ name }).eq("id", ctx.organization.id);
+    await supabase.from("organizations").update({ name }).eq("id", orgId);
     revalidatePath("/app", "layout");
   }
 
@@ -60,7 +66,7 @@ export default async function SettingsPage() {
             <form action={updateOrg} className="space-y-3">
               <div>
                 <Label htmlFor="name">Workspace name</Label>
-                <Input id="name" name="name" defaultValue={ctx.organization.name} maxLength={80} required />
+                <Input id="name" name="name" defaultValue={orgName} maxLength={80} required />
               </div>
               <Button type="submit">Save</Button>
             </form>

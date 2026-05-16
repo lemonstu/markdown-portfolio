@@ -2,13 +2,32 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input, Label } from "@/components/ui/input";
 
 export default function SignInPage() {
+  return (
+    <Suspense fallback={<SignInFallback />}>
+      <SignInForm />
+    </Suspense>
+  );
+}
+
+function SignInFallback() {
+  return (
+    <Card>
+      <CardContent className="py-6">
+        <h2 className="text-base font-semibold mb-4 text-center">Sign in</h2>
+        <p className="text-center text-xs text-[var(--color-muted)]">Loading…</p>
+      </CardContent>
+    </Card>
+  );
+}
+
+function SignInForm() {
   const router = useRouter();
   const params = useSearchParams();
   const nextPath = params.get("next") || "/app/dashboard";
